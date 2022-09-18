@@ -12,3 +12,6 @@ cd ..
 
 # Copying the .desktop file to register the session
 echo -ne '\n' | sudo cp $SCRIPT_DIR/configs/qtile/qtile.desktop /usr/share/xsessions
+
+# Installing nitrogen...
+sudo apt install nitrogen -y
