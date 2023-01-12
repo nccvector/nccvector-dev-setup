@@ -19,6 +19,8 @@ source configureTerminator.bash
 
 source configurePythonPip.bash
 
+source configureCustomCommands.bash
+
 # source configureQtile.bash
 
 # source configurePicom.bash
