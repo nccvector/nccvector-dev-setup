@@ -1,4 +1,6 @@
-configs
-neovim
-qtile
-picom
+# Ignore all
+*
+
+# Unignore all with the following extensions
+!*.bash
+!*.sh
