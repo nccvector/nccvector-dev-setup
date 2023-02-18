@@ -1,3 +1,6 @@
+# Installing xclip (needed for pasting from clipboard)
+sudo apt install xclip
+
 if [ ! -d "$SCRIPT_DIR/neovim" ]; then
 	# Cloning neovim
 	git clone https://github.com/neovim/neovim.git
