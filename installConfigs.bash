@@ -1,3 +1,11 @@
+
+#!/usr/bin/env bash
+
+XDG_CONFIG_HOME=~/.config
+
+# Getting current script directory
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
 # Cloning
 if [ ! -d "$SCRIPT_DIR/configs" ]; then
 	# Cloning neovim
