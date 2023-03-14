@@ -34,4 +34,9 @@ fi
 echo "Successfuly found pip!"
 echo "Path: 	$WHICHPIP"
 echo "Command: 	$PIP"
-echo "Version:	$($PIP --version)"	
+echo "Version:	$($PIP --version)"
+
+echo "Installing Essential libraries"
+echo "Installing Numpy"
+$PIP install numpy
+$PIP install matplotlib
