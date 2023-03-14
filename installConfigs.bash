@@ -7,4 +7,7 @@ cd $XDG_CONFIG_HOME
 
 git init
 git remote add origin git@github.com:nccvector/configs.git
+git clean -fd
+git fetch
 git checkout -f main
+git pull
