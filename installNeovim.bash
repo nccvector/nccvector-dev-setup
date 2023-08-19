@@ -15,4 +15,4 @@ make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
 cd ..
 
-pip install pynvim -y
+pip install pynvim
