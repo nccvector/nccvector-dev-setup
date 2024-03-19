@@ -1,6 +1,2 @@
-# Ignore all
-*
-
-# Unignore all with the following extensions
-!*.bash
-!*.sh
+lazygit
+**.gz

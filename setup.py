@@ -1,0 +1,31 @@
+#!/usr/bin/python3
+
+import subprocess
+
+# Utilities
+subprocess.run(['sudo', 'apt', 'install', 'python3-pip', '-y'])
+subprocess.run(['sudo', 'apt', 'install', 'gnome-tweaks', '-y'])
+
+# Fonts, Icons, Configs
+subprocess.run(['sudo', 'apt', 'install', 'fonts-firacode', '-y'])	# Needed for terminator config
+subprocess.call(['sh', 'installConfigs.bash'])
+
+
+# Terminal multiplexer
+subprocess.run(['sudo', 'apt', 'install', 'terminator', '-y'])
+# TODO: Set it to default using `sudo update-alternatives --config x-terminal-emulator` somehow pipe an <enter> key to it
+
+# Text editors
+subprocess.run(['sudo', 'apt', 'install', 'vim', '-y'])
+subprocess.run(['sudo', 'apt', 'install', 'neovim', '-y'])
+subprocess.run(['pip', 'install', 'pynvim', '-y'])
+
+# Dev essentials
+subprocess.call(['sh', 'installLazygit.bash'])
+subprocess.run(['sudo', 'apt', 'install', 'make', '-y'])
+subprocess.run(['sudo', 'apt', 'install', 'cmake', '-y'])
+subprocess.run(['sudo', 'apt', 'install', 'cmake-curses-gui', '-y'])
+subprocess.run(['sudo', 'apt', 'install', 'pybind11-dev', '-y'])
+
+# Tools
+subprocess.run(['sudo', 'apt', 'install', 'ripgrep', '-y'])
