@@ -20,6 +20,8 @@ subprocess.run(['sudo', 'apt', 'install', 'vim', '-y'])
 subprocess.run(['sudo', 'apt', 'install', 'neovim', '-y'])
 subprocess.run(['pip', 'install', 'pynvim', '-y'])
 
+#
+
 # Dev essentials
 subprocess.call(['sh', 'installLazygit.bash'])
 subprocess.run(['sudo', 'apt', 'install', 'make', '-y'])
@@ -29,3 +31,7 @@ subprocess.run(['sudo', 'apt', 'install', 'pybind11-dev', '-y'])
 
 # Tools
 subprocess.run(['sudo', 'apt', 'install', 'ripgrep', '-y'])
+
+# IDEs
+subprocess.run(['sudo', 'snap', 'install', 'clion', '--classic', '--edge'])
+subprocess.run(['sudo', 'snap', 'install', 'pycharm-professional', '--classic', '--edge'])
