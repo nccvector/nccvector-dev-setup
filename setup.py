@@ -12,12 +12,14 @@ subprocess.call(['sh', 'installConfigs.bash'])
 
 
 # Terminal multiplexer
-subprocess.run(['sudo', 'apt', 'install', 'terminator', '-y'])
+subprocess.run(['sudo', 'apt', 'install', 'cargo', '-y'])
+subprocess.run(['cargo', 'install', 'alacritty', '-y'])
+subprocess.run(['sudo', 'apt', 'install', 'tmux', '-y'])
 # TODO: Set it to default using `sudo update-alternatives --config x-terminal-emulator` somehow pipe an <enter> key to it
 
 # Text editors
 subprocess.run(['sudo', 'apt', 'install', 'vim', '-y'])
-subprocess.run(['sudo', 'apt', 'install', 'neovim', '-y'])
+# subprocess.run(['sudo', 'apt', 'install', 'neovim', '-y'])    # TODO: Build from source
 subprocess.run(['pip', 'install', 'pynvim', '-y'])
 
 #
